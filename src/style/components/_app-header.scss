@@ -1,0 +1,51 @@
+.navbar-container {
+  width: 100vw;
+  background-color: $main-clr;
+  border-bottom: 1px solid black;
+
+  .navbar {
+    & > * {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      flex: 1;
+      font-family: AvenirHeavy;
+      font-size: rem(40px);
+    }
+    .nav-links {
+      width: 50%;
+      height: 100%;
+      gap: 30px;
+      justify-content: flex-end;
+      @include for-mobile-layout {
+        display: none;
+      }
+      li,
+      a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: rem(20px);
+        &:hover {
+          box-shadow: 0px 3px 0px 0px $active-link-clr;
+          cursor: pointer;
+          color: white;
+        }
+      }
+    }
+    .hamburger-menu-icon {
+      display: none;
+      @include for-mobile-layout {
+        fill: white;
+        display: flex;
+      }
+    }
+    & li {
+      text-align: center;
+      color: white;
+    }
+  }
+}

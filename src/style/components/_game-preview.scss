@@ -1,0 +1,38 @@
+.game-card {
+  width: 20rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 4px;
+  .title {
+    font-size: 1.20625rem;
+    font-family: AvenirMedium;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid black;
+    text-align: center;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    // align-items: center;
+    flex: 1;
+    font-size: rem(18px);
+    font-family: AvenirRoman;
+    overflow: scroll;
+    background-color: $secondary-clr;
+    color: white;
+  }
+
+  .card-footer {
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: AvenirRoman;
+  }
+}
